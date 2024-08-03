@@ -7,7 +7,7 @@ from airflow.models import Variable
 
 default_args = {
     'owner': 'Howdy',
-    'retries': 3,
+    'retries': 0,
     'retry_delay': timedelta(minutes=5)
 }
 
