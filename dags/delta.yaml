@@ -10,17 +10,17 @@ spec:
   image: testacr321.azurecr.io/delta:v1
   imagePullPolicy: IfNotPresent
   mainApplicationFile: local:///opt/bitnami/spark/examples/src/main/python/delta.py
-  sparkVersion: 3.5.0
+  sparkVersion: 3.3.0
   driver:
     labels:
-      version: 3.5.0
+      version: 3.3.0
     cores: 1
     coreLimit: 1200m
     memory: 512m
     serviceAccount: spark
   executor:
     labels:
-      version: 3.5.0
+      version: 3.3.0
     instances: 1
     cores: 1
     coreLimit: 1200m
