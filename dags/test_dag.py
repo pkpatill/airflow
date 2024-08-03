@@ -28,11 +28,11 @@ with DAG(
        trigger_rule="all_success",
        depends_on_past=False,
        retries=0,
-       application_file="new-spark-pi.yaml",
+       application_file="delta.yaml",
        namespace="spark-jobs",
        kubernetes_conn_id="myk8s",
        #api_group="sparkoperator.k8s.io",
        #api_version="v1beta2",
-       do_xcom_push=True,
+       do_xcom_push=False,
        dag=dag
    )
