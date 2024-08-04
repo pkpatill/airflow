@@ -7,7 +7,7 @@ spec:
   type: Python
   pythonVersion: "3"
   mode: cluster
-  image: testacr321.azurecr.io/delta:v3
+  image: testacr321.azurecr.io/my-spark-image:latest
   imagePullPolicy: IfNotPresent
   mainApplicationFile: local:///opt/spark/examples/src/main/python/pi2.py
   sparkVersion: 3.5.0
