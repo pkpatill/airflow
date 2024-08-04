@@ -9,7 +9,7 @@ spec:
   mode: cluster
   image: testacr321.azurecr.io/delta:v3
   imagePullPolicy: IfNotPresent
-  mainApplicationFile: local:///opt/bitnami/spark/examples/src/main/python/pi2.py
+  mainApplicationFile: local:///opt/spark/examples/src/main/python/pi2.py
   sparkVersion: 3.5.0
   driver:
     labels:
