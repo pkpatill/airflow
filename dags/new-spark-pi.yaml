@@ -9,7 +9,7 @@ spec:
   mode: cluster
   image: spark:3.5.0
   imagePullPolicy: IfNotPresent
-  mainApplicationFile: local:///opt/spark/examples/src/main/python/kmeans.py
+  mainApplicationFile: local:///opt/spark/examples/src/main/python/pagerank.py
   sparkVersion: 3.5.0
   driver:
     labels:
