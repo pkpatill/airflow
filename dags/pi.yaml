@@ -7,13 +7,13 @@ spec:
   type: Python
   pythonVersion: "3"
   mode: cluster
-  image: testacr321.azurecr.io/delta:v1
+  image: testacr321.azurecr.io/delta:v3
   imagePullPolicy: IfNotPresent
-  mainApplicationFile: local:///opt/bitnami/spark/examples/src/main/python/pi.py
-  sparkVersion: 3.3.0
+  mainApplicationFile: local:///opt/bitnami/spark/examples/src/main/python/pi2.py
+  sparkVersion: 3.5.0
   driver:
     labels:
-      version: 3.3.0
+      version: 3.5.0
     cores: 1
     coreLimit: 1200m
     memory: 512m
