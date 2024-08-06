@@ -30,7 +30,7 @@ with DAG(
        retries=0,
        application_file="delta.yaml",
        namespace="spark-jobs",
-       kubernetes_conn_id="myk8s",
+       kubernetes_conn_id="kubernetes_default",
        #api_group="sparkoperator.k8s.io",
        #api_version="v1beta2",
        do_xcom_push=False,
